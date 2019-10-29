@@ -11,10 +11,10 @@ headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:45.0) Gecko/20100101 Firefox/45.0'
       }
 
-urls='https://en.wikipedia.org/wiki/October_28' ##https://games.mail.ru/pc/games/calendar/2017-10-27/
+urls='https://games.mail.ru/pc/games/calendar/2017-10-27/' ##https://games.mail.ru/pc/games/calendar/2017-10-27/
 
 
-page = requests.get (urls, headers=headers)
+page = requests.get (urls, headers=headers).text
 stp = requests.get (urls)
 print (stp.status_code)
 ##<div id="main" class="tabcontent"
