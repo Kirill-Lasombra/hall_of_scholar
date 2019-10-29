@@ -6,10 +6,7 @@ from urllib.request import urlopen
 import bs4
 
 from bs4 import BeautifulSoup
-
-headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:45.0) Gecko/20100101 Firefox/45.0'
-      }
+from .headers_for_parsing import headers, inter_dict
 
 urls='https://games.mail.ru/pc/games/calendar/2017-10-27/' ##https://games.mail.ru/pc/games/calendar/2017-10-27/
 
