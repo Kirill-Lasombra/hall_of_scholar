@@ -6,6 +6,7 @@ import os, sys
 dd = int(input('Укажите день: '))
 mm = int(input('Укажите месяц: '))
 print("Формирую файл со всеми играми вышедшими {:02}.{:02}".format(dd,mm))
+td_fl= open ('{:02}.{:02}.txt'.format(dd,mm),'w')
 
 for yy in range(1988,2020):
     urls= 'https://api.games.mail.ru/pc/calendar/?date={:04}-{:02}-{:02}&page=1&filter=popular&limit=100'.format(yy,mm,dd)
